@@ -1,0 +1,449 @@
+/*Forside start*/
+/*Sidenav start*/
+.sidenav {
+  display: none;
+}
+
+.sidebarmenu {
+  display: none;
+}
+
+.forsideheader {
+  width: 100%;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+   transition: margin-left .5s;
+   padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+   .sidenav {padding-top: 15px;}
+   .sidenav a {font-size: 18px;}
+}
+/*Sidenav push slut*/
+
+/*Grid styling start*/
+.boks1forside {
+  grid-column: 1/4;
+  height: auto;
+}
+
+.boks1forside img{
+  width: 100%;
+}
+
+.boks2forside {
+  grid-column: 1/4;
+  height: auto;
+}
+
+.boks3forside {
+  grid-column: 1/4;
+  height: auto;
+}
+/*Grid styling start*/
+
+/*Forside slut*/
+
+/*Lån og reserver bøger start*/
+/*Generelle elementer styling*/
+h3 {
+  text-align: center;
+  background-color: #7baeb4;
+  color: #000;
+  padding: 0.5em;
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+/*Grid styling*/
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 1em;
+  grid-auto-rows: minmax (100px, auto);
+}
+
+.grid-container > section{
+  padding: 1em;
+}
+
+.boks1 {
+  grid-column: 1/4;
+  height: auto;
+  background: #ffffff;
+  margin-bottom: 0;
+  overflow: auto;
+}
+
+.boks2 {
+  grid-column: 1/4;
+}
+
+.boks3 {
+  grid-column: 1;
+  display: none;
+}
+
+.boks4 {
+  grid-column: 1/4;
+  align-self: baseline;
+}
+
+.boks5 {
+  grid-column: 1/4;
+  margin-top: 1em;
+}
+
+.boks6 {
+  grid-column: 1/4;
+}
+
+/*Grid styling slut*/
+
+/*Header styling start*/
+
+#navdesktop {
+  display: none;
+}
+
+#navikon {
+  width: 20%;
+  float: right;
+  background-color: #ea712a;
+  text-align: center;
+  padding: 0.5em;
+  font-size: 1.4em;
+  margin-top: 1em;
+  margin-right: 1em;
+}
+
+#navikon:hover {
+transform: scale(1.1);
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 0.3em;
+    -webkit-padding-start: 0;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 4px;
+    color: white;
+}
+
+nav li a {
+    color: #000;
+}
+
+#navmobile {
+    text-align: center;
+    font-size: 1.2em;
+    background: #7baeb4;
+}
+
+#navmobile li {
+    padding: 0.8em;
+    border-bottom: 0.3em solid #fff;
+}
+
+#navmobile li:hover {
+  transform: scale(1.1);
+}
+
+#logo {
+  width: 40%;
+  margin-left: 2em;
+  margin-top: 1em;
+}
+
+#logo img {
+  width: 100%;
+}
+/*Header styling slut*/
+
+/*Søgefelt start*/
+
+/* Add a black background color to the top navigation bar */
+.search {
+    overflow: hidden;
+    background-color: #7baeb4;
+}
+
+/* Style the search box inside the navigation bar */
+.search input[type=text] {
+    float: left;
+    width: 82%;
+    height: auto;
+    padding: 0.5em;
+    border: none;
+    margin: 0.5em;
+    font-size: 1em;
+}
+
+#submit {
+  width: 10%;
+  height: auto;
+  float: left;
+  padding: 0.5em;
+  background-color: #dcdcdc;
+  margin: 0.5em;
+}
+
+#submit:hover {
+  transform: scale(1.1);
+}
+
+#icon {
+  width: 100%;
+  height: auto;
+}
+
+/*Søgefelt slut*/
+
+/*Boeger start*/
+
+  .bog {
+    margin: 1em;
+    background: #dcdcdc;
+    padding: 1em;
+  }
+
+  .bog h2 {
+    width: 49%;
+    float: left;
+    font-size: 1em;
+    margin-right: 2em;
+  }
+
+  .bog a {
+    color: #000;
+  }
+
+/*Boeger slut*/
+
+
+/*Lån og Reserver (boks2) styling start*/
+
+#laanbibfire {
+  width: 100%;
+  height: auto;
+}
+
+#laanbibfire img {
+  width: 100%;
+}
+/*Lån og Reserver (boks2) styling slut*/
+
+
+/*Footer start*/
+
+#kontakt {
+  display: none;
+}
+
+#adresse {
+  display: none;
+}
+
+/*Footer slut*/
+/*Lån og reserver bøger slut*/
+
+@media screen and (min-width: 500px) {
+  ul li {
+    font-size: 1em;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    display: inherit;
+    text-decoration: underline;
+  }
+
+  ul li:hover {
+    transform: scale(1.1);
+  }
+
+  #bibikonboks {
+    width: 50%;
+    margin-left: 2em;
+  }
+
+  #bibikon {
+    width: 100%;
+  }
+
+  #bibikon img {
+    width: 100%;
+  }
+
+  .boks3 {
+    display: block;
+    background-color: #dcdcdc;
+  }
+
+  .boks4 {
+    grid-column: 2/4;
+  }
+
+  .boks5 {
+    grid-column: 2/4;
+  }
+
+  .search input[type=text] {
+    width: 85%;
+  }
+
+  #submit {
+    width: 90%;
+    margin-top: 0.5em;
+    margin-left: 1em;
+  }
+
+}
+
+@media screen and (min-width: 600px) {
+/*Header laan start*/
+  #navikon {
+    display: none;
+  }
+
+  #navmobile {
+    display: none;
+  }
+
+  #navdesktop {
+    display: block;
+    font-size: 1.5em;
+    float: right;
+  }
+
+  #navdesktop li {
+    display: inline;
+    font-size: 0.6em;
+  }
+
+  #logo {
+    width: 20%;
+  }
+
+  /*Header laan slut*/
+
+  /*Header forside start*/
+  .sidenav {
+    display: block;
+  }
+
+  .sidebarmenu {
+    display: block;
+  }
+  /*Header forside slut*/
+
+  /*Søgefelt start*/
+
+  .search input[type=text] {
+    width: 70%;
+  }
+
+  #submit {
+    width: 13%;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    font-size: 1em;
+  }
+
+  /*Søgefelt slut*/
+
+  /*Footer start*/
+
+  #kontakt {
+    display: block;
+    width: 49%;
+    margin: 0;
+    float: left;
+  }
+
+  #adresse {
+    display: block;
+    width: 49%;
+    text-align: right;
+    margin: 0;
+    float: left;
+  }
+  /*Footer slut*/
+}
+
+@media screen and (min-width: 800px) {
+  /*Header start*/
+  #navdesktop {
+    font-size: 2em;
+  }
+  /*Header slut*/
+
+  /*Søgefelt start*/
+  #submit {
+    width: 14%;
+    margin-left: 1.5em;
+  }
+  /*Søgefelt slut*/
+}
+
+@media screen and (min-width: 1000px) {
+  /*Tekst og billede start*/
+  .boks2 p{
+    font-size: 1.5em;
+    width: 60%;
+  }
+
+  .boks2 h2{
+    font-size: 2.5em;
+  }
+  /*Tekst og billede slut*/
+}
